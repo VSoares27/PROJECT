@@ -1,0 +1,57 @@
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+}
+
+td.celula {
+    border: 1px solid white; /* Tudo em uma linha */
+    text-align: center;
+    font-weight: bold;
+    vertical-align: center;
+    height: 70px;
+    width: 90px;
+}
+
+td.personagem {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+td.objetivo {
+    background-color: yellow;
+    color: white;
+}
+
+td.bloco {
+    border-color:  rgb(40, 70, 48);
+    background-color: rgb(40, 70, 48);
+    color: white;
+}
+
+
+.container {
+    display: flexbox;
+    align-items: flex-start;
+}
+
+
+ .dice-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px; /* Espaço entre o dado e o tabuleiro */
+    }
+    
+.dice {
+    font-size: 100px;
+    margin-right: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
