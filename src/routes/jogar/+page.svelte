@@ -84,23 +84,6 @@ function onKeyDown(evento) : void {
 
     let jogo : EstadoJogo = inicializarJogo()
 
-    
-    const diceElement = document.getElementById('dice') as HTMLElement;
-    const rollButton = document.getElementById('rollButton') as HTMLButtonElement;
-
-    function getRandomDiceFace(): number {
-        const diceFaces = [1, 2, 3, 4, 5, 6];
-        const randomIndex = Math.floor(Math.random() * diceFaces.length);
-        return diceFaces[randomIndex];
-    }
-
-    function rollDice() {
-        const newFace = getRandomDiceFace();
-        diceElement.textContent = `🎲 ${newFace}`;
-        rollButton.disabled = true; // Desativa o botão após o clique
-    }
-
-    rollButton.addEventListener('click', rollDice);
 
 </script>
 
