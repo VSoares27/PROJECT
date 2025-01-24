@@ -15,9 +15,13 @@
     
     
     function inicializarJogo() : EstadoJogo {
-        let personagem : Coordenada = new Coordenada()
-        personagem.linha = 5
-        personagem.coluna = 0
+        let personagemA: Coordenada = new Coordenada()
+        personagemA.linha = 5
+        personagemA.coluna = 0
+
+        let personagemB: Coordenada = new Coordenada()
+        personagemB.linha = 5
+        personagemB.coluna = 0
         
         let objetivo : Coordenada = new Coordenada()
         objetivo.linha = 5
@@ -37,7 +41,8 @@
     ]
     
     let estado : EstadoJogo = new EstadoJogo()
-    estado.posicaoPersonagem = personagem
+    estado.posicaoPersonagemA = personagemA
+    estado.posicaoPersonagemB = personagemB
     estado.posicaoObjetivo = objetivo
     estado.mapa = mapa
     
@@ -88,7 +93,7 @@ function onKeyDown(evento) : void {
 </script>
 
 
-<h1>MOVIMENTE O PERSONAGEM ATÉ O OBJETIVO FINAL</h1>
+<h1>MOVIMENTE O PERSONAGEM ATÉ O OBJETIVO FINAL (QUADRADO AMARELO)</h1>
 
 <table>
     {#each jogo.mapa as linha, i}
