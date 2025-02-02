@@ -119,6 +119,3 @@ function onKeyDown(evento) : void {
 
 <svelte:window on:keydown|preventDefault={onKeyDown} />
 
-<style>
-
-</style>
