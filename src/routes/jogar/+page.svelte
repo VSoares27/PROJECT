@@ -8,6 +8,7 @@
     
     
     class EstadoJogo {
+        posicaoPersonagemB : Coordenada
         posicaoPersonagem : Coordenada
         posicaoObjetivo : Coordenada
         mapa : number[][]
