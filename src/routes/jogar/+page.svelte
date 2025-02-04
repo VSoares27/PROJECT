@@ -8,7 +8,6 @@
     
     
     class EstadoJogo {
-        posicaoPersonagemB : Coordenada
         posicaoPersonagem : Coordenada
         posicaoObjetivo : Coordenada
         mapa : number[][]
@@ -20,10 +19,6 @@
         personagemA.linha = 5
         personagemA.coluna = 0
 
-        let personagemB: Coordenada = new Coordenada()
-        personagemB.linha = 5
-        personagemB.coluna = 0
-        
         let objetivo : Coordenada = new Coordenada()
         objetivo.linha = 5
         objetivo.coluna = 9
@@ -42,8 +37,7 @@
     ]
     
     let estado : EstadoJogo = new EstadoJogo()
-    estado.posicaoPersonagemA = personagemA
-    estado.posicaoPersonagemB = personagemB
+    estado.posicaoPersonagem = personagemA
     estado.posicaoObjetivo = objetivo
     estado.mapa = mapa
     
@@ -93,7 +87,6 @@ function onKeyDown(evento) : void {
 
 </script>
 
-
 <h1>MOVIMENTE O PERSONAGEM ATÉ O OBJETIVO FINAL (QUADRADO AMARELO)</h1>
 
 <table>
@@ -117,6 +110,7 @@ function onKeyDown(evento) : void {
 <br />
 
 <a class="menu" href="/">Voltar ao Menu</a>
+
 
 <svelte:window on:keydown|preventDefault={onKeyDown} />
 

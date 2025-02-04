@@ -1,9 +1,15 @@
-<h1>Ajuda</h1>
+<body class="ajuda">
+    <h1>Ajuda</h1>
 
-<h2>Como jogar?</h2>
-   
-<p>
+    <h2>Como jogar?</h2>
+       
+    <p>
+        
+    </p>
     
-</p>
+    <a class="menu" href="/">Voltar ao Menu</a> 
+    
+</body>
 
-<a class="menu" href="/">Voltar ao Menu</a>
+
+
