@@ -1,38 +1,13 @@
-# create-svelte
+## SOBRE
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+ Este jogo foi desenvolvido para o projeto da disciplina "Programação Imperativa" no curso superior "Sistemas Para Internet" do IFPE, no qual é um jogo de tabuleiro inspirado em Mario Party e WarioWare. 
+ Neste jogo, 2 participantes terão que disputar para conseguir chegar ao final sem deixar que sua vida acabe.
 
-## Creating a project
+## COMO JOGAR?
 
-If you're seeing this, you've probably already done this step. Congrats!
+## COMO A I.A AJUDOU NO PROJETO?
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## COMO RODAR O JOGO NA MÁQUINA?
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
 npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
