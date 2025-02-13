@@ -7,11 +7,22 @@
 
 ## COMO A I.A AJUDOU NO PROJETO?
 
- O uso da I.A (Inteligência Artificial) foi o que auxiliou para a criação deste projeto,
- Por meio dela, foi possível tirar dúvidas e solucionar problemas que surgiram durante o desenvolvimento do jogo.
+ O uso da I.A (Inteligência Artificial) foi o que auxiliou para a criação deste projeto, por meio dela, foi possível tirar dúvidas e solucionar problemas que surgiram durante o desenvolvimento do jogo.
  
 ## COMO RODAR O JOGO NA MÁQUINA?
 
- Para rodar este projeto, você deve baixar este repositório. Após baixar o repositório, você deve extrair e abrir no VS Code(Visual Studio Code).
+ Para rodar este projeto, você deve baixar este repositório.
+ 
+ Após baixar o repositório, você deve extrair e abrir no VS Code(Visual Studio Code).
 
-npm run build
+ Após abrir o repositório no VS Code, você deve abrir o terminal e digitar o seguinte comando:
+
+ ```
+ npm install
+ ```
+ Após isso, aperte na tecla enter e espere alguns segundos, logo após você deve digitar o seguinte comando:
+ ```
+ npm run build
+ ```
+ ## ATENÇÃO!
+ Em caso de não abrir automaticamente após mandar o último comando, digite "o" no terminal e dê enter que abrirá o jogo no navegador.
