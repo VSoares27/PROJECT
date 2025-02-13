@@ -1,36 +1,92 @@
-body{
-  background-color:  rgb(40, 70, 48)
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative; /* Necessário para o funcionamento do position: absolute nos filhos */
 }
+.titulo{
+    font-size: 25px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    font-family: 'Right Chalk';
+    margin: 0% 0% 1.5% 0%;    
+}
+
+.content {
+    background-image: none; /* Removido o background */
+    text-align: center;
+}
+
 
 table {
-    background-color: rgb(40, 70, 48);
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: separate;
+    margin: -25px auto;
+    border-spacing: 10px; /* Espaço entre os bloquinhos */
 }
 
-td.celula {
-    border: 1px solid white;
-    text-align: center;
-    font-weight: bold;
-    vertical-align: center;
-    height: 70px;
-    width: 90px;
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: relative; /* Para permitir z-index */
 }
 
-td.personagem {
-    background-color: rgb(211, 211, 211);
-    cursor: pointer;
+.celula {
+    background-image: url('/imagens/piso.png'); /* Caminho ajustado */
+    background-size: 240% 230%; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    border: none;
+    z-index: 1;
 }
 
-td.objetivo {
+.personagem {
+    background-image: url('/imagens/personagem.png'); /* Caminho ajustado para a imagem do personagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */   
+    z-index: 2; /* Define um z-index mais alto para o personagem */
+    position: relative; /* Garante que o personagem é posicionado sobre a plataforma */
+ 
+}
+
+.personagemb {
+    background-image: url('/imagens/personagem_b.png'); /* Caminho ajustado para a imagem do segundo personagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    z-index: 2;
+    position: relative; /* Ajustado de absolute para relative */
+}
+
+.objetivo {
     background-color: yellow;
-    color: white;
+    z-index: 2; /* Garante que o objetivo esteja acima do personagem */
+    position: relative;
 }
 
-td.bloco {
-    border-color:  rgb(40, 70, 48);
-    background-color: rgb(40, 70, 48);
-    color: white;
+.celulan {
+    background-image: none; /* Removido o background */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    position: relative; /* Necessário para o funcionamento do z-index */
+    border: none;
 }
 
+.menuj{
+    float: left;
+    display: block ;
+    align-content: center;
+    font-size: 20px;
+    margin: -3% 3%;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 3px;
+    width: 20%;
+    padding: 5px;
+    background-color: lightgrey;
+    border: 3px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

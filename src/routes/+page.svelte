@@ -1,10 +1,6 @@
-<script lang="ts">
-    let tituloDoJogo: string = "THE LAST CHAMPION"; 
-</script>
+<div class="background">
 
-<body class="principal">
-
-    <h1>{tituloDoJogo}</h1>
+    <h1>THE LAST CHAMPION</h1>
 
     <br />
     <a class="menu" href="/jogar">Jogar</a>
@@ -13,7 +9,6 @@
     <br />
     <a class="menu" href="/sobre">Sobre</a>
     
-
-</body>
+</div>
 
  
